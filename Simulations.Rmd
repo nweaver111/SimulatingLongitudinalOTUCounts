@@ -1,0 +1,87 @@
+---
+title: "Simulating OTU counts at single and multiple time points"
+author: "Nicholas Weaver"
+date: "2/25/2021"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Working Outline
+
+1) Introduction
+
+2) Discuss data structure of Real Data
+
+3) Explain simulation technique
+
+4) Step-by-step simulation process
+
+5) Evaluating simulations
+
+6) Conclusion
+
+## (1) Introduction
+
+Fill in with Introduction.
+
+## (2) Real OTU Count Data
+
+In 2010, Charlson et al published a study on the impact of smoking to the human throat microbiome. Along with the results of their study, the count data of 856 OTUs across 60 subjects was made publicly available. Since 2010, numerous researchers have utilized the public data to simulate OTU counts for synthetic microbiome data (cite with my papers). 
+
+The data is also easily available on R through the GUniFrac package in the CRAN repository. 
+
+```{r, warning=FALSE, message=FALSE}
+library(GUniFrac)
+```
+
+```{r}
+data("throat.otu.tab")
+```
+
+Using the `dim()` function we see the data set loaded correctly as a data frame with 60 rows and 856 columns
+
+```{r}
+dim(throat.otu.tab)
+```
+
+
+## (3) Simulation Technique
+
+Fill in with simulation technique
+
+## (4) Simulation Example
+
+Step-by-step simulation with Throat data. Lots of code chunks!
+
+## (5) Evaluting Simulations
+
+Fill in with evalutions, use a bunch of plots :)
+
+## (6) Second Example
+
+Use the WF data here
+
+## (7) Conclusion
+
+Final thoughts/comments. Any points for discussion
+
+
+## Below is example of how to embed code
+```{r cars}
+summary(cars)
+```
+
+## Below is example of how to Include Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
